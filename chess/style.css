@@ -1,6 +1,6 @@
 #title{
    font-family: 'UglyTypistRegular';
-   font-size: 200%;
+   font-size: large;
    font-weight: normal;
    font-style: normal;
    margin-top: 50px;
@@ -18,7 +18,7 @@ margin: 10px 10px;
 }
 
 #container {
-margin-top:20%;
+margin-top:5%;
 margin-left:10%;
 margin-right:10%;
 margin-bottom:5%;
