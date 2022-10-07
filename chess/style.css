@@ -13,14 +13,11 @@ background-image:url("https://images.unsplash.com/photo-1543092587-d8b8feaf362b?
 
 
 img {
-margin: 10px 10px;
+margin: auto;
 }
 
 #container {
-margin-top:5%;
-margin-left:10%;
-margin-right:10%;
-margin-bottom:5%;
+margin:auto;
 }
 
 .row{
@@ -41,7 +38,7 @@ float:left;
 border: 1px solid black;
 width: 10%;
 height: 60px;
-background-color:#787878;
+background-color:#9C6137;
 float:left;
 }
 
@@ -53,5 +50,7 @@ clear: both;
 #footer {
 border:solid 1px;
 padding: 10px;
-margin:10px;
+text-align: center;
+margin-top: auto;
+margin-bottom: auto;
 }
