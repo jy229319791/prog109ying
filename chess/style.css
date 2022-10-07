@@ -27,7 +27,8 @@ img {
 
 .row{
   position:relative;
-  align-text: center;
+  margin-left: 10%;
+  margin-right: 10%;
  
 }
 
