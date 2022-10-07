@@ -21,8 +21,7 @@ img {
 }
 
 #container {
-  display: flex;
-  align-text: center;
+  margin:20% 20%;
 }
 
 .row{
