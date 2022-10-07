@@ -1,55 +1,64 @@
+
 #title{
    font-family: 'UglyTypistRegular';
    font-weight: normal;
    font-style: normal;
+   font-size:40px;
    margin-top: 50px;
    margin-bottom: 50px ;
    background-color: #E6E6FA;
    text-align: center;
 }
 body {
-background-image:url("https://images.unsplash.com/photo-1543092587-d8b8feaf362b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-image:url("https://images.unsplash.com/photo-1543092587-d8b8feaf362b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center; 
 }
 
 
 img {
-margin: auto;
+  margin:auto;
 }
 
 #container {
-margin: auto;
+  margin-top:5%;
+  argin-left:10%;
+  margin-right:10%;
+  margin-bottom:5%;
 }
 
 .row{
-position:relative;
-margin-left: 20%;
-margin-right: 10%;
+  position:relative;
+  margin-left: 20%;
+  margin-right: 10%;
+
 }
 
 .white{
-border: 1px solid white;
-width: 10%;
-height: 50px;
-background-color:white;
-float:left;
+  border: 1px solid white;
+  width: 10%;
+  height: 50px;
+  background-color:white;
+  float:left;
 }
 
 .black{
-border: 1px solid white;
-width: 10%;
-height: 50px;
-background-color:#9C6137;
-float:left;
+  border: 1px solid white;
+  width: 10%;
+  height: 50px;
+  background-color:#9C6137;
+  float:left;
 }
 
 .clear{
-clear: both;
+  clear: both;
 }
 
  
 #footer {
-text-align: center;
-margin-top: 50px;
-margin-bottom: 50px;
-background-color: #E6E6FA;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #E6E6FA;
 }
