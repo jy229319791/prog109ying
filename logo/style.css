@@ -3,14 +3,22 @@ h1{
    font-weight: normal;
    font-style: normal;
    color: #665544;
-   text-align: center;}
+   text-align: center;
+}
 body {
    width: 90%;
-   margin: 0 auto;}
+   margin: 0 auto;
+   background-image:url("https://i.ibb.co/R6CTSfk/SNOOPYBanner-September10.png");
+   background-size:contain;
+  
+   
+}
 #content {
-   overflow: auto;}
+   overflow: auto;
+}
 #nav, #feature, #footer {
-   margin: 1%;}
+   margin: 1%;
+}
 .column1, .column2, .column3 {
    height: 10em;
    width: 31.3%;
@@ -30,21 +38,22 @@ body {
 }
 li {
    display: inline;
-   padding: 0.5em;}
+   padding: 0.5em;
+}
 #nav{
    background-color:#F6DDCC;
    padding: 0.5em 0;
 }
 #footer {
    background-color: #F0FFF0;
-   padding: 0.5em 0;}
+   padding: 0.5em 0;
+}
 #feature{
    height: 10em;
    margin-bottom: 1em;
    background-color:#D0D3D4;
-   background-image: url("https://www.peanuts.com/sites/default/files/sn-color.jpg");
-   background-size: contain;
+   background-image: url("https://jy229319791.github.io/prog109ying/logo/My%20project-1.png");
+   background-size: cover;
    background-position: right;
    background-repeat: no-repeat;
-   
-  }
+}
