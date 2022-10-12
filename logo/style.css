@@ -42,4 +42,9 @@ li {
    height: 10em;
    margin-bottom: 1em;
    background-color:#D0D3D4;
+   background-image: url("https://www.peanuts.com/sites/default/files/sn-color.jpg");
+   background-size: contain;
+   background-position: right;
+   background-repeat: no-repeat;
+   
   }
