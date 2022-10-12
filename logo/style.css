@@ -54,7 +54,7 @@ li {
    margin-bottom: 1em;
    background-color:#D0D3D4;
    background-image: url("https://jy229319791.github.io/prog109ying/logo/My%20project-1.png");
-   background-size: cover;
+   background-size: contain;
    background-position: right;
    background-repeat: no-repeat;
 }
