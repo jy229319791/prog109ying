@@ -12,18 +12,34 @@ body {
 #nav, #feature, #footer {
    margin: 1%;}
 .column1, .column2, .column3 {
+   height: 10em;
    width: 31.3%;
    float: left;
-   margin: 1%;}
+   margin: 1%;
+   margin-bottom: 1em;
+}
+.column1{
+   background-color:#B0C4DE;
+}
+.column2{
+   background-color:#E6E6FA;
+}
 .column3 {
-   margin-right: 0%;}
+   background-color:#E8F8F5;
+   margin-right: 0%;
+}
 li {
    display: inline;
    padding: 0.5em;}
-#nav, #footer {
-   background-color: #efefef;
+#nav{
+   background-color:#F6DDCC;
+   padding: 0.5em 0;
+}
+#footer {
+   background-color: #F0FFF0;
    padding: 0.5em 0;}
-#feature, .article {
+#feature{
    height: 10em;
    margin-bottom: 1em;
-   background-color: #efefef;}
+   background-color:#D0D3D4;
+  }
