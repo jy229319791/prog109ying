@@ -7,9 +7,10 @@
 }
 body {
    width: 90%;
+   height: 100%;
    margin: 0 auto;
    background-image:url("https://i.ibb.co/R6CTSfk/SNOOPYBanner-September10.png");
-   background-size:contain;
+   background-size:cover;
    opacity: 0.8;
 }
 #content {
