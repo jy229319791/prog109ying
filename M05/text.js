@@ -4,7 +4,7 @@ var msg = '<h2>Multiplication Table</h2>';      // Message
 
 function myFunction(){
   var num = prompt("Please enter a number:");
-  if (0<num<10){
+  if (num>0 && num<10){
   while(i<11){
    msg += i+'x'+num+'='+(i*num)+'<br/>';
    i++;
@@ -13,7 +13,7 @@ function myFunction(){
     alert('Invalid input!');
   }
 }
+ myFunction();
 
 // Write the message into the page
 document.getElementById('blackboard').innerHTML =msg;
- console.log(myFunction());
