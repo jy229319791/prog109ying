@@ -2,7 +2,7 @@ body {
 font-family:'UglyTypistRegular' ;
 margin: 0;
 padding: 0; 
-background: #e5e5e5;
+background-image: url('bgpic.jpg');
 color: #3f3f3f;
 font-size: 16px;
 line-height: 40px;
