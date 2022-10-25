@@ -17,7 +17,7 @@ for (i=1;i<=pHeight;i++){
 rLine +="<p>";
 //Create each line on the Rhombus
 for (x=1;x<=pHeight-i;x++){
-  rLine +="<span class='space:'>" + pSymbol +"</span>"
+  rLine +="<span class='space'>" + pSymbol +"</span>"
 }
 for(j=x;j<=pHeight;j++){
 
@@ -44,7 +44,7 @@ for (i=pHeight;i>=1;i--){
 rLine +="<p>";
 //Create each line on the Rhombus
 for (x=1;x<=pHeight-i;x++){
-  rLine +="<span class='space:'>" + pSymbol +"</span>"
+  rLine +="<span class='space'>" + pSymbol +"</span>"
 }
 for(j=x;j<=pHeight;j++){
 
