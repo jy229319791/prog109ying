@@ -1,3 +1,8 @@
+h1,h2 {
+  font-weight: bold;
+  text-align:center;
+}
+
 #upLeft {
 float: left;
 
