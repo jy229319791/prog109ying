@@ -1,7 +1,7 @@
 body { 
 font-family:'UglyTypistRegular' ;
-margin: 50px;
-padding: 25px; 
+margin: 0;
+padding: 0; 
 color: #f8f9f9;
 font-size: 20px;
 line-height: 40px;
@@ -9,6 +9,7 @@ background-image: url('bgpic.jpg');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+text-align: center;
 }
 
 a { 
