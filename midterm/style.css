@@ -51,6 +51,9 @@ padding: 10px 20px;
 border-bottom: 1px solid #e1e1e1;
 border-top: 1px solid #e1e1e1;
 text-align: center;
+font-family: 'JelleeBold';
+font-weight: normal;
+font-style: normal;
 font-size: 22px;
 }
 #topmenu ul { margin: 0; padding: 0; list-style-type: none;}
@@ -71,7 +74,6 @@ border-bottom-right-radius: 10px;
 border-bottom-left-radius: 10px;
 color: #FFFFFF;
 padding: 20px;
-border-top: 1px solid #e1e1e1;
 }
 #footer a { color: #fff; text-decoration: none; border-bottom: 1px dotted #fff; }
 #footer a:hover { border-bottom: 1px dotted #ccc; }
