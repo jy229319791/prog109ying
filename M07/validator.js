@@ -1,16 +1,16 @@
 function validateForm(){
 
- var firstname= document.getElementById('FirstName').value;
- var lastname= document.getElementById('LastName').value;
- var email= document.getElementById('Email').value;
- var phone= document.getElementById('Phone').value;
- var username= document.getElementById('Username').value;
- var password= document.getElementById('Password').value;
- var address= document.getElementById('Address').value;
- var city= document.getElementById('City').value;
- var state= document.getElementById('State').value;
- var country= document.getElementById('Country').value;
- var zipcode= document.getElementById('ZipCpde').value;  
+ var firstname= document.getElementById("FirstName").value;
+ var lastname= document.getElementById("LastName").value;
+ var email= document.getElementById("Email").value;
+ var phone= document.getElementById("Phone").value;
+ var username= document.getElementById("Username").value;
+ var password= document.getElementById("Password").value;
+ var address= document.getElementById("Address").value;
+ var city= document.getElementById("City").value;
+ var state= document.getElementById("State").value;
+ var country= document.getElementById("Country").value;
+ var zipcode= document.getElementById("ZipCpde").value;  
  document.getElementById("errorMessages").innerHTML = errorMessages;
   
   if (firstname ==="null" || firstname === "" || firstname.length > 20 ) {
