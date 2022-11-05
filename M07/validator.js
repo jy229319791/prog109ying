@@ -10,7 +10,7 @@ function validateForm(){
  var city= document.getElementById("City").value;
  var state= document.getElementById("State").value;
  var country= document.getElementById("Country").value;
- var zipcode= document.getElementById("ZipCpde").value;  
+ var zipcode= document.getElementById("ZipCode").value;  
  document.getElementById("errorMessages").innerHTML = errorMessages;
   
   if (firstname ==="null" || firstname === "" || firstname.length > 20 ) {
