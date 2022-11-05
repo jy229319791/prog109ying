@@ -70,7 +70,7 @@ function validateForm(){
     } else {
     return true;
     }
-  if (country === "US") {
+
       if (zipcode.length != 5) {
           errorMessages= "Invalid ZipCode. ZipCode must be 5 digits."
           zipcode.focus();
@@ -78,8 +78,5 @@ function validateForm(){
         } else {
                     return true;
          }
-            } else {
-                zipcode.removeAttribute("required");
-            }
- 
+           
 }
