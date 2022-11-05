@@ -10,6 +10,7 @@ function validateForm() {
     FirstName.addEventListener("blur", FirstName, false);
     LastName.addEventListener("blur", LastName, false);
     Email.addEventListener("blur", Email, false);
+    Username.addEventListener('blur', Username, false);
     Password.addEventListener("blur", Password, false);
     ZipCode.addEventListener("blur", ZipCode, false);
     Phone.addEventListener("blur", Phone, false);
@@ -76,7 +77,6 @@ function validatePhone() {
         return true;
     }
 }
-Username.addEventListener('blur', Username, false);
 
 function validateUsername() {
     var username = document.getElementById("Username").value;
