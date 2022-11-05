@@ -11,7 +11,7 @@ function validateForm(){
  var state= document.getElementById("State").value;
  var country= document.getElementById("Country").value;
  var zipcode= document.getElementById("ZipCode").value;  
- document.getElementById("errorMessages").innerHTML = errorMessages;
+ 
   
   if (firstname ==="null" || firstname === "" || firstname.length > 20 ) {
      errorMessages="First name invalid -length. It must be less than 20 characters.";
@@ -78,5 +78,5 @@ function validateForm(){
         } else {
                     return true;
          }
-           
+    document.getElementById("errorMessages").innerHTML = errorMessages;       
 }
