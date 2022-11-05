@@ -1,4 +1,4 @@
-function valiateForm(){
+function validateForm(){
 
  var firstname= document.getElementById('FirstName').value;
  var lastname= document.getElementById('LastName').value;
