@@ -60,7 +60,7 @@ function validateForm(){
     return false;
   }
   var city= document.getElementById("City").value;
-  if (city===""||city===null){
+  if (city===""||city===null||city.match("^[a-zA-Z ,.'-]+$")===null){
     document.getElementById("errorMessages").innerHTML  ="Please fill out the city.";
     city.focus();
     return false;
