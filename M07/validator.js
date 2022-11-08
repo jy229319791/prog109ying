@@ -80,14 +80,13 @@ function validateForm(){
   
   var validState=false;
   var state= document.getElementById("State").value;
-  if(country==="US"){
   if (state ==="-1"){
     document.getElementById("errorMessages").innerHTML  ="Please select a state.";
     //state.focus();
   }else{
     validState=true;
   }
-  }
+  
   
   var validCountry=false;
   var country= document.getElementById("Country").value;
