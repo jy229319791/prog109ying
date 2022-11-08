@@ -84,5 +84,5 @@ function validateForm(){
      zipcode.focus();
      return false;
   }
-       return (true);
+       return true;
   }
