@@ -1,82 +1,89 @@
 function validateForm(){
 
- var firstname= document.getElementById("FirstName").value;
- var lastname= document.getElementById("LastName").value;
- var email= document.getElementById("Email").value;
- var phone= document.getElementById("Phone").value;
- var username= document.getElementById("Username").value;
- var password= document.getElementById("Password").value;
- var address= document.getElementById("Address").value;
- var city= document.getElementById("City").value;
- var state= document.getElementById("State").value;
- var country= document.getElementById("Country").value;
- var zipcode= document.getElementById("ZipCode").value;  
  
-  
+  var firstname= document.getElementById("FirstName").value; 
   if (firstname ==="null" || firstname === "" || firstname.length > 20 ) {
-     errorMessages="First name invalid -length. It must be less than 20 characters.";
+     document.getElementById("errorMessages").innerHTML ="First name invalid -length. It must be less than 20 characters.";
      firstname.focus();
      return false;
-   } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
-     errorMessages="Invaid characters in first name field.";
+  }
+  if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
+     document.getElementById("errorMessages").innerHTML ="Invaid characters in first name field.";
      firstname.focus();
-     return false;       
-   } else {
-           return true;   
-   }
+     return false;  
+   } 
   
+   var lastname= document.getElementById("LastName").value;
   if (lastname ==="null" || lastname ==="" || lastname.length > 50 ) {
-     errorMessages="Last name invalid -length. It must be less than 50 characters";
+     document.getElementById("errorMessages").innerHTML ="Last name invalid -length. It must be less than 50 characters";
      lastname.focus();
      return false;
-   } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
-     errorMessages="Invaid characters in last name field.";
-     lastname.focus();  
+   } 
+  if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
+     document.getElementById("errorMessages").innerHTML ="Invaid characters in last name field.";
+     lastname.focus();
      return false;       
-   } else {
-       return true;   
    }
   
+  var email= document.getElementById("Email").value;
   var atpos = email.indexOf("@");
   var dotpos = email.lastIndexOf(".");
   if (atpos<1|| dotpos<atpos+2|| dotpos+2>=email.length){
-     errorMessages="Invaid Email address!";
+     document.getElementById("errorMessages").innerHTML ="Invaid Email address!";
      email.focus();
      return false;
-  }else{
-    return true;
   }
   
+  var phone= document.getElementById("Phone").value;
   if (isNaN(phone) || phone.length > 15 || phone === null || phone === "") {
-    errorMessages="Invalid phone number!";
+    document.getElementById("errorMessages").innerHTML ="Invalid phone number!";
     phone.focus();
     return false;
-  }else{
-    return true;
   }
   
+  var username= document.getElementById("Username").value;
   if (username === "" || username === null || username.length > 12) {
-    errorMessages= "Invalid username! Username must include no more than 12 characters.";
+    document.getElementById("errorMessages").innerHTML = "Invalid username! Username must include no more than 12 characters.";
     username.focus();
     return false;
-    } else {
-    return true;
-    }
+    } 
   
+  var password= document.getElementById("Password").value;
   if (password === "" || password === null || password.length > 7) {
-    errorMessages = "Invalid password! Password must include no more than 7 characters";
+    document.getElementById("errorMessages").innerHTML  = "Invalid password! Password must include no more than 7 characters";
     password.focus();
     return false;
-    } else {
-    return true;
-    }
-
-      if (zipcode.length != 5) {
-          errorMessages= "Invalid ZipCode. ZipCode must be 5 digits."
-          zipcode.focus();
-          return false;
-        } else {
-                    return true;
+    } 
+  var address= document.getElementById("Address").value;
+  if (address===""||address===null){
+    document.getElementById("errorMessages").innerHTML  ="Please fill out this field.";
+    address.focus();
+    return false;
+  }
+  var city= document.getElementById("City").value;
+  if (city===""||city===null){
+    document.getElementById("errorMessages").innerHTML  ="Please fill out this field.";
+    city.focus();
+    return false;
+  }
+  var state= document.getElementById("State").value;
+  if (state ==="-1"){
+    document.getElementById("errorMessages").innerHTML  ="Please fill out this field.";
+    state.focus();
+    return false;
+  }
+  var country= document.getElementById("Country").value;
+  if (country==="-1"){
+    document.getElementById("errorMessages").innerHTML  ="Please fill out this field.";
+    country.focus();
+    return false;
+  }
+  var zipcode= document.getElementById("ZipCode").value; 
+   if (zipcode.length != 5) {
+     document.getElementById("errorMessages").innerHTML = "Invalid ZipCode. ZipCode must be 5 digits."
+     zipcode.focus();
+     return false;
+    } 
+  
+       return (true);
          }
-    document.getElementById("errorMessages").innerHTML = errorMessages;       
-}
