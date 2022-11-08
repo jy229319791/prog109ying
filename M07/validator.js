@@ -85,8 +85,5 @@ function validateForm(){
      return false;
   }
        return (true);
-  }else {
+  }
   event.preventDefault();
-  return false;
-         }
-}
