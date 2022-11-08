@@ -53,7 +53,7 @@ function validateForm(){
   
   var validPassword=false;
   var password= document.getElementById("Password").value;
-  if (password === "" || password === null || password.match( /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z0-9]).{,7}$/,)===null){
+  if (password === "" || password === null || password.match("^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z0-9]).{,7}$")===null){
     document.getElementById("errorMessages").innerHTML  = "Invalid password! Password must include an uppercase character, a lowercase character and a special character and no more than 7 characters";
     //password.focus();
     } else{
