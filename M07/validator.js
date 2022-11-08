@@ -53,8 +53,8 @@ function validateForm(){
   
   var validPassword=false;
   var password= document.getElementById("Password").value;
-  if (password === "" || password === null || password.match ("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{,7}$")===null){
-    document.getElementById("errorMessages").innerHTML  = "Invalid password! Password must include no more than 7 characters";
+  if (password === "" || password === null || password.match("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{,7}$")===null){
+    document.getElementById("errorMessages").innerHTML  = "Invalid password! Password must include an uppercase character, a lowercase character and a special character and no more than 7 characters";
     //password.focus();
     } else{
       validPassword=true;
@@ -72,7 +72,7 @@ function validateForm(){
   var validCity=false;
   var city= document.getElementById("City").value;
   if (city===""||city===null||city.match("^[a-zA-Z ,.'-]+$")===null){
-    document.getElementById("errorMessages").innerHTML  ="Please fill out the city.";
+    document.getElementById("errorMessages").innerHTML  ="Please fill out the city. Invalid characters.";
     //city.focus();
   }else{
     validCity=true;
@@ -104,6 +104,5 @@ function validateForm(){
   }else{
     validZipcode=true;
   }
-       return (true); 
-               //&& validLastname && validEmail &&validCity);
+       return(validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
   }
