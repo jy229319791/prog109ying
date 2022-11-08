@@ -80,11 +80,13 @@ function validateForm(){
   
   var validState=false;
   var state= document.getElementById("State").value;
+  if(country==="US"){
   if (state ==="-1"){
     document.getElementById("errorMessages").innerHTML  ="Please select a state.";
     //state.focus();
   }else{
     validState=true;
+  }
   }
   
   var validCountry=false;
@@ -98,11 +100,13 @@ function validateForm(){
   
   var validZipcode=false;
   var zipcode= document.getElementById("ZipCode").value; 
+  if(country==="US"){
   if (zipcode.length !== 5) {
      document.getElementById("errorMessages").innerHTML = "Invalid ZipCode. ZipCode must be 5 digits.";
      //zipcode.focus();
   }else{
     validZipcode=true;
+  }
   }
        return(validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
   }
