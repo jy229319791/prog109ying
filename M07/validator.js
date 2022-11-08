@@ -56,25 +56,25 @@ function validateForm(){
     } 
   var address= document.getElementById("Address").value;
   if (address===""||address===null){
-    document.getElementById("errorMessages").innerHTML  ="Please fill out this field.";
+    document.getElementById("errorMessages").innerHTML  ="Please fill out the address.";
     address.focus();
     return false;
   }
   var city= document.getElementById("City").value;
   if (city===""||city===null){
-    document.getElementById("errorMessages").innerHTML  ="Please fill out this field.";
+    document.getElementById("errorMessages").innerHTML  ="Please fill out the city.";
     city.focus();
     return false;
   }
   var state= document.getElementById("State").value;
   if (state ==="-1"){
-    document.getElementById("errorMessages").innerHTML  ="Please fill out this field.";
+    document.getElementById("errorMessages").innerHTML  ="Please select a state.";
     state.focus();
     return false;
   }
   var country= document.getElementById("Country").value;
   if (country==="-1"){
-    document.getElementById("errorMessages").innerHTML  ="Please fill out this field.";
+    document.getElementById("errorMessages").innerHTML  ="Please select a country.";
     country.focus();
     return false;
   }
