@@ -56,7 +56,7 @@ function validateForm(){
   var validPassword=false;
   var password= document.getElementById("Password").value;
   if (password === "" || password === null || password.match("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9_])")===null){
-    document.getElementById("errorMessages").innerHTML  = "Invalid password! Password must include an uppercase character, a lowercase character and a special character and no more than 7 characters";
+    document.getElementById("errorMessages").innerHTML  = "Invalid password! Password must include at lease an uppercase letter, a lowercase letter, a special character, numbers and no more than 7 characters";
      document.getElementById("Username").focus();
     } else{
       validPassword=true;
