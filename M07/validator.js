@@ -48,7 +48,8 @@ function validateForm(){
     } 
   
   var password= document.getElementById("Password").value;
-  if (password === "" || password === null || password.length > 7) {
+  if (password === "" || password === null || password ==="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{,7}$
+") {
     document.getElementById("errorMessages").innerHTML  = "Invalid password! Password must include no more than 7 characters";
     password.focus();
     return false;
