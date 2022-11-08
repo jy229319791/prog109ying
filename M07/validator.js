@@ -1,7 +1,5 @@
 function validateForm(){
-  event.preventDefault();
-  return false;
-}else if{
+
   var firstname= document.getElementById("FirstName").value; 
   if (firstname ==="null" || firstname === "" || firstname.length > 20 ) {
      document.getElementById("errorMessages").innerHTML ="First name invalid -length. It must be less than 20 characters.";
@@ -84,6 +82,9 @@ function validateForm(){
      document.getElementById("errorMessages").innerHTML = "Invalid ZipCode. ZipCode must be 5 digits."
      zipcode.focus();
      return false;
-  }else{
+  }
        return true;
+  }else {
+  event.preventDefault();
+  return false;
          }
