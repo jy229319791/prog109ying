@@ -89,5 +89,5 @@ function validateForm(){
       return (validZipcode);
   }
   }
-       return (true);
+       return true;
          }
