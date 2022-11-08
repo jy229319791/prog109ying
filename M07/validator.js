@@ -1,7 +1,4 @@
 function validateForm(){
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-});
 
   var firstname= document.getElementById("FirstName").value; 
   if (firstname ==="null" || firstname === "" || firstname.length > 20 ) {
