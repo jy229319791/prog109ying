@@ -79,7 +79,8 @@ function validateForm(){
     return false;
   }
   var zipcode= document.getElementById("ZipCode").value; 
-   if (zipcode.length != 5) {
+  if(country==="US") 
+  if (zipcode.length != 5) {
      document.getElementById("errorMessages").innerHTML = "Invalid ZipCode. ZipCode must be 5 digits."
      zipcode.focus();
      return false;
