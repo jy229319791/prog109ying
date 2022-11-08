@@ -5,9 +5,11 @@ function validateForm(){
   if (firstname ==="null" || firstname === "" || firstname.length > 20 ) {
      document.getElementById("errorMessages").innerHTML ="First name invalid -length. It must be less than 20 characters.";
      document.getElementById("FirstName").focus();
+     return false;
   }else if(firstname.match("^[a-zA-Z ,.'-]+$")===null) {
      document.getElementById("errorMessages").innerHTML ="Invaid characters in first name field.";
      document.getElementById("FirstName").focus();
+     return false;
   }else{
     validFirstname=true;
   }
@@ -17,9 +19,11 @@ function validateForm(){
   if (lastname ==="null" || lastname ==="" || lastname.length > 50 ) {
      document.getElementById("errorMessages").innerHTML ="Last name invalid -length. It must be less than 50 characters";
      document.getElementById("LastName").focus();
+     return false;
   } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
      document.getElementById("errorMessages").innerHTML ="Invaid characters in last name field.";
-     document.getElementById("LastName").focus();  
+     document.getElementById("LastName").focus();
+     return false;
   } else {
      validLastname=true;
    }
@@ -31,6 +35,7 @@ function validateForm(){
   if (atpos<1|| dotpos<atpos+2|| dotpos+2>=email.length){
      document.getElementById("errorMessages").innerHTML ="Invaid Email address!";
      document.getElementById("Email").focus();
+     return false;
   }else{
     validEmail=true;
   }
@@ -40,6 +45,7 @@ function validateForm(){
   if (isNaN(phone) || phone.length > 15 || phone === null || phone === "") {
     document.getElementById("errorMessages").innerHTML ="Invalid phone number!";
     document.getElementById("Phone").focus();
+    return false;
   }else{
     validPhone=true;
   }
@@ -49,6 +55,7 @@ function validateForm(){
   if (username === "" || username === null || username.length > 12) {
     document.getElementById("errorMessages").innerHTML = "Invalid username! Username must include no more than 12 characters.";
      document.getElementById("Username").focus();
+     return false;
     }else{
       validUsername=true;
     }
@@ -57,7 +64,8 @@ function validateForm(){
   var password= document.getElementById("Password").value;
   if (password === "" || password === null || password.match("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9_])")===null){
     document.getElementById("errorMessages").innerHTML  = "Invalid password! Password must include at lease an uppercase letter, a lowercase letter, a special character, numbers and no more than 7 characters";
-     document.getElementById("Username").focus();
+    document.getElementById("Username").focus();
+    return false;
     } else{
       validPassword=true;
     }
@@ -66,7 +74,8 @@ function validateForm(){
   var address= document.getElementById("Address").value;
   if (address===""||address===null){
     document.getElementById("errorMessages").innerHTML  ="Please fill out the address.";
-     document.getElementById("Address").focus();
+    document.getElementById("Address").focus();
+    return false;
   }else{
     validAddress=true;
   }
@@ -76,6 +85,7 @@ function validateForm(){
   if (city===""||city===null||city.match("^[a-zA-Z ,.'-]+$")===null){
     document.getElementById("errorMessages").innerHTML  ="Please fill out the city. Invalid characters.";
     document.getElementById("City").focus();
+    return false;
   }else{
     validCity=true;
   }
@@ -85,6 +95,7 @@ function validateForm(){
   if (state ==="-1"){
     document.getElementById("errorMessages").innerHTML  ="Please select a state.";
     document.getElementById("State").focus();
+    return false;
   }else{
     validState=true;
   }
@@ -95,6 +106,7 @@ function validateForm(){
   if (country==="-1"){
     document.getElementById("errorMessages").innerHTML  ="Please select a country.";
     document.getElementById("Country").focus();
+    return false;
   }else{
     validCountry=true;
   }
@@ -105,6 +117,7 @@ function validateForm(){
   if (zipcode.length !== 5) {
      document.getElementById("errorMessages").innerHTML = "Invalid ZipCode. ZipCode must be 5 digits.";
      document.getElementById("ZipCode").focus();
+     return false;
   }else{
     validZipcode=true;
   }
