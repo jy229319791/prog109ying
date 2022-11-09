@@ -119,9 +119,9 @@ function validateForm(){
      document.getElementById("ZipCode").focus();
      return false;
   }else{
-    validZipcode=true;
+     return true;
   }else{
-    return true;
+     validZipcode=true;
   }
        return(validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
   }
