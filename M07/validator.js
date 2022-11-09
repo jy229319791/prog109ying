@@ -117,8 +117,6 @@ function validateForm(){
      document.getElementById("errorMessages").innerHTML = "Invalid ZipCode. ZipCode must be 5 digits.";
      document.getElementById("ZipCode").focus();
      return false;
-  }else if (country === "US" && zipcode.length == 5){
-     validZipcode=true;
   }else{
     validZipcode=true;
   }
