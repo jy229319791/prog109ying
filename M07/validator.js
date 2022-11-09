@@ -121,7 +121,7 @@ function validateForm(){
   }else{
     validZipcode=true;
   }else{
-    validZipcode=true;
+    return true;
   }
        return(validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
   }
