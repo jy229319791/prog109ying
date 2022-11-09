@@ -112,15 +112,15 @@ function validateForm(){
   }
   
   var validZipcode=false;
-  var zipcode= document.getElementById("ZipCode").value; 
-  if(country==="US"){
-  if (zipcode.length !== 5) {
+    var zipcode= document.getElementById("ZipCode").value; 
+  if(country==="US" && zipcode.length !== 5){
      document.getElementById("errorMessages").innerHTML = "Invalid ZipCode. ZipCode must be 5 digits.";
      document.getElementById("ZipCode").focus();
      return false;
-  }else{
+  }else if (country === "US" && zipcode.length == 5){
      validZipcode=true;
-  }
+  }else{
+    validZipcode=true;
   }
        return(validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
   }
