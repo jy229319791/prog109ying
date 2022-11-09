@@ -42,7 +42,7 @@ function validateForm(){
   
   var validPhone=false;
   var phone= document.getElementById("Phone").value;
-  if (isNaN(phone) || phone.length > 15 || phone === null || phone === "") {
+  if ( phone.match(/^\d+(-\d+)*$/)===null || phone.length > 15 || phone === null || phone === "") {
     document.getElementById("errorMessages").innerHTML ="Invalid phone number!";
     document.getElementById("Phone").focus();
     return false;
