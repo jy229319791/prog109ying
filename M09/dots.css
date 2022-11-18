@@ -3,8 +3,5 @@
     background: beige;
   }
   .dot {
-    height: 8px; width: 8px;
-    border-radius: 4px; /* rounds corners */
-    background: blue;
     position: absolute;
 }
