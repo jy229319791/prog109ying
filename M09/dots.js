@@ -14,20 +14,21 @@ event.stopPropagation();
 //This will add the event "Click" to the document (page). So anytime the user click, a new dot is going to be added.
 addEventListener("click", function(event) {
     var dot = document.createElement("div");
+    var color=document.getElementById("colordots").value;
+    var size=document.getElementById("sizedots").value;  
     dot.className = "dot";
     dot.style.left = (event.pageX - 4) + "px";
     dot.style.top = (event.pageY - 4) + "px";
+    dot.style.backgroundColor=color;
+    dot.style.borderRadius=size;
+    dot.style.height=size;
+    dot.style.width=size;
     document.body.appendChild(dot);
   
-    document.getElementById("colordots").onchange=function changecolor(){
-      var color=document.getElementById("colordots").value;
-      dot.style.backgroundColor=color;
-    };
-    document.getElementById("sizedots").onchange=function changesize(){
-      var size=document.getElementById("sizedots").value;
-      dot.style.borderRadius=size;
-      dot.style.height=size;
-      dot.style.width=size;
-    };
+    document.getElementById("colordots").addEventListener("change", function() {
+    });
+    document.getElementById("sizedots").addEventListener("change", function() {
+    });
+ 
 
   }); 
