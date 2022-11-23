@@ -1,0 +1,10 @@
+table,th,td {
+  border: 1px solid;
+  width: 600px;
+  height: 100px;
+}
+.cell{
+   background-image:url(https://www.bellevuecollege.edu/ctclink/wp-content/uploads/sites/407/2021/10/Super-New-graphic-for-Its-Your-Time-2000-x-2000-px-300x300.png);no-repeat center center;
+   background-size: cover; 
+   opacity:0.5;
+}
