@@ -7,4 +7,11 @@ body{
 }
 button{
   font-size:20px;
+  display:grid;
+  margin:auto;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
