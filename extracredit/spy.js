@@ -15,5 +15,6 @@ Tree.addEventListener("click", function(){
 }, false);
 
 function replay(){
-location.reload();
+ var map= document.getElementById("randommap");
+ map.reload();
 }
