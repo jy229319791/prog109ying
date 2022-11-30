@@ -47,5 +47,5 @@ function validateForm(){
      document.getElementById("comment").focus();
      return false;
     }else{
-      validUsername=true;
+      validComment=true;
     }
