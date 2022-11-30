@@ -16,7 +16,7 @@ function validateForm(){
     
    var validLastname=false;
    var lastname= document.getElementById("LastName").value;
-  if (lastname ==="null" || lastname ==="" || lastname.length > 50 ) {
+  if (lastname ==="null" || lastname ==="" || lastname.length > 20 ) {
      document.getElementById("errorMessages").innerHTML ="Last name invalid -length. It must be less than 50 characters";
      document.getElementById("LastName").focus();
      return false;
@@ -42,7 +42,7 @@ function validateForm(){
   
   var validComment=false;
   var comment= document.getElementById("Comment").value;
-  if (comment === null || comment === "") {
+  if (comment === null || comment === "" || comment.length >400) {
     document.getElementById("errorMessages").innerHTML = "The field must be filled out!";
     document.getElementById("comment").focus();
      return false;
