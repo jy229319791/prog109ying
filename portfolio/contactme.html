@@ -13,22 +13,24 @@
 </div>
 
 <div class="container">
-  <form action="thankyou.html" method="get" name="myContact">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  <form action="thankyou.html" onsubmit="return validateForm();">
+    <label for="FirstName">First Name*:</label>
+    <input type="text" id="FirstName" name="FirstName" placeholder="Your name..">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="LastName">Last Name*:</label>
+    <input type="text" id="LastName" name="LastName" placeholder="Enter your last name.." >
 
-    <label for="e-mail">E-mail</label>
-    <input type="text" id="e-mail" name="e-mail" placeholder="Your E-mail..">
+    <label for="Email">Email*:</label>
+    <input type="text" id="Email" name="Email" placeholder="mail@example.com" >
 
-    <label for="comment">Comment</label>
-    <input type="text" id="comment" name="Comment" placeholder="Write.." style="height:200px">
+    <label for="Comment">Comment</label>
+    <input type="text" id="Comment" name="Comment" placeholder="Write something.." style="height:200px">
 
     <input type="submit" value="Submit">
+    <div id="errorMessages"></div>
   </form>
 </div>
+  <script src="validator.js" ></script>
 <div id="footer">
 
 <div class="left">
