@@ -49,3 +49,5 @@ function validateForm(){
     }else{
       validComment=true;
     }
+    return(validFirstname && validLastname && validEmail && validComment );
+  }
