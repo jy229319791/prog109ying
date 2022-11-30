@@ -27,15 +27,7 @@ function validateForm(){
   } else {
      validLastname=true;
    }
-  var validComment=false;
-  var comment= document.getElementById("Comment").value;
-  if (comment === null || comment === "" || comment.length >400) {
-    document.getElementById("comment").focus();
-    document.getElementById("errorMessages").innerHTML = "The field must be filled out!";
-     return false;
-    }else{
-      validComment=true;
-    }
+
   var validEmail=false;
   var email= document.getElementById("Email").value;
   var atpos = email.indexOf("@");
@@ -48,5 +40,14 @@ function validateForm(){
     validEmail=true;
   }
   
-
+    var validComment=false;
+  var comment= document.getElementById("Comment").value;
+  if (comment === null || comment === "" || comment.length >400) {
+    document.getElementById("comment").focus();
+    document.getElementById("errorMessages").innerHTML = "The field must be filled out!";
+     return false;
+    }else{
+      validComment=true;
+    }
+   return(validFirstname&&validLastname&&validEmail&&validComment);
   }
