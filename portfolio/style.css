@@ -117,3 +117,6 @@ input[type=submit]:hover{
   padding: 20px;
   color: #E9967A;
 }
+#errorMessages{
+  color:red;
+}
