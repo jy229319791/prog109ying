@@ -40,11 +40,11 @@ function validateForm(){
     validEmail=true;
   }
   
-    var validComment=false;
+  var validComment=false;
   var comment= document.getElementById("Comment").value;
-  if (comment === "" || comment === null) {
-    document.getElementById("errorMessages").innerHTML = "The field must be fiiled out!";
-     document.getElementById("comment").focus();
+  if (comment === null || comment === "") {
+    document.getElementById("errorMessages").innerHTML = "The field must be filled out!";
+    document.getElementById("comment").focus();
      return false;
     }else{
       validComment=true;
