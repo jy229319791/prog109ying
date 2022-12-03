@@ -16,18 +16,18 @@
   <form action="thankyou.html" onsubmit="return validateForm();">
     <label for="FirstName">First Name*:</label>
     <input type="text" id="FirstName" name="FirstName" placeholder="Your name..">
-
+    <div id="errorMessages"></div>
     <label for="LastName">Last Name*:</label>
     <input type="text" id="LastName" name="LastName" placeholder="Enter your last name.." >
-
+    <div id="errorMessages"></div>
     <label for="Email">Email*:</label>
     <input type="text" id="Email" name="Email" placeholder="mail@example.com" >
-
+    <div id="errorMessages"></div>
     <label for="Comment">Comment*:</label>
     <input type="text" id="Comment" name="Comment" placeholder="Write something.." style="height:200px">
-
-    <input type="submit" value="Submit"><br>
     <div id="errorMessages"></div>
+    <input type="submit" value="Submit"><br>
+    
   </form>
 </div>
   <script src="validator.js" ></script>
