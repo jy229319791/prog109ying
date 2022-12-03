@@ -117,7 +117,6 @@ input[type=submit]:hover{
   padding: 20px;
   color: #E9967A;
 }
-#errorMessages{
-  color:white;
-  background-color:red;
+#errorMessages1, #errorMessages2, #errorMessages3, #errorMessages4{
+  color:red;
 }
