@@ -1,20 +1,27 @@
 var Pig = document.getElementById("pig");
-Pig.addEventListener("click", function(){
-    foundItem("pig");
-  Pig.style.textDecoration="line-through";
-}, false);
 var Sun = document.getElementById("sun");
-Sun.addEventListener("click", function(){
-    foundItem("sun");
-  Sun.style.textDecoration="line-through";
-}, false);
 var Tree = document.getElementById("tree");
-Tree.addEventListener("click", function(){
-    foundItem("tree");
-  Tree.style.textDecoration="line-through";
+
+function foundPig(){
+  document.getElementById("item1").style.textDecoration="line-through";
+}
+
+Pig.addEventListener("click", function(){
+  foundPig("Pig");
 }, false);
 
-function replay(){
- var map= document.getElementById("randommap");
- map.reload();
+function foundSun(){
+  document.getElementById("item2").style.textDecoration="line-through";
 }
+
+Sun.addEventListener("click", function(){
+  foundSun("Sun");
+}, false);
+
+function foundTree(){
+  document.getElementById("item3").style.textDecoration="line-through";
+}
+
+Tree.addEventListener("click", function(){
+  foundTree("Tree");
+}, false);
